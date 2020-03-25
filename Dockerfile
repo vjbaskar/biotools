@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-RUN apt-get update && apt-get -y install make build-essential zlib1g-dev ncurses-dev libbz2-dev liblzma-dev default-jre
+RUN apt-get update && apt-get -y install make build-essential zlib1g-dev ncurses-dev libbz2-dev liblzma-dev default-jre wget
 COPY ./picard.jar picard.jar
 COPY ./samtools-1.9.tar.bz2 samtools-1.9.tar.bz2
 RUN tar xjvf samtools-1.9.tar.bz2
